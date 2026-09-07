@@ -32,7 +32,7 @@ Para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`, você pode segui
     ```bash
     sudo apt clean
     ```
-    
+
     2.2 Remover pacotes `.deb` antigos ou duplicados do `cache` local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando:
     ```bash
     sudo apt autoclean
@@ -43,21 +43,40 @@ Para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`, você pode segui
     sudo apt autoremove -y
     ```
 
-    2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update -y`
+    2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`:
+    ```bash
+    sudo apt update
+    ```
 
-    2.5 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
+    2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes:
+    ```bash
+    sudo apt --fix-broken install
+    ```
 
-    2.6 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update -y`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
+    2.6 Limpar o `cache` do gerenciador de pacotes `apt` novamente:
+    ```bash
+    sudo apt clean
+    ```
 
-    2.7 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
+    2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:
+    ```bash
+    sudo apt list --upgradable
+    ```
 
-    2.8 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+    2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`:
+    ```bash
+    sudo apt full-upgrade -y
+    ```
 
 ## 1.2 Usar o `gromit-mpx`
 
-Para instalar o gromit-mpx no Linux Ubuntu, você pode seguir os seguintes passos:
+Para instalar o `gromit-mpx` no `Linux Ubuntu`, você pode seguir os seguintes passos:
 
-1. **Instale o gromit-mpx executando:** `sudo apt install gromit-mpx -y`
+1. **Instale o `gromit-mpx` executando:**
+
+    ```bash
+    sudo apt install gromit-mpx -y
+    ```
 
     Após a instalação, você pode iniciar o `gromit-mpx` diretamente do terminal ou configurá-lo para iniciar automaticamente com o sistema. O `gromit-mpx` permite que você desenhe em sua tela, o que pode ser particularmente útil para apresentações ou para destacar algo enquanto você grava sua tela.
 
