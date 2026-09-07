@@ -20,15 +20,28 @@ O `Gromit-MPX` é uma ferramenta de desenho em tela aberta projetada para permit
 
 Para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`, você pode seguir estes passos:
 
-1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
+
+    ```bash
+    Ctrl + Alt + T
+    ```
 
 2. Certifique-se de que seu sistema esteja limpo e atualizado.
 
-    2.1 Limpar o `cache` do gerenciador de pacotes APT. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo APT e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
+    2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando:
+    ```bash
+    sudo apt clean
+    ```
     
-    2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+    2.2 Remover pacotes `.deb` antigos ou duplicados do `cache` local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando:
+    ```bash
+    sudo apt autoclean
+    ```
 
-    2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
+    2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando:
+    ```bash
+    sudo apt autoremove -y
+    ```
 
     2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update -y`
 
@@ -54,6 +67,8 @@ Lembre-se de que, para fazer anotações durante uma apresentação ou enquanto 
 
 ### 1.2.1 Teclas de atalho do `grommit-mpx`
 
+<div align="center">
+
 | _Description_     | Descrição             | Tecla de atalho |
 |:------------------|:----------------------|:---------------:|
 | Toggle painting   | Alternar pintura      | `Home`          |
@@ -63,15 +78,21 @@ Lembre-se de que, para fazer anotações durante uma apresentação ou enquanto 
 | Redo              | Refazer               | `Shift + End`   | 
 | Quit              | Sair                  | `Alt + Home`    |
 
+</div>
+
 ## 2. Código completo para configurar/instalar/usar
 
 Para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`sem precisar digitar linha por linha, você pode seguir estas etapas:
 
-1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
+
+    ```bash
+    Ctrl + Alt + T
+    ```
 
 2. Digite o seguinte comando e pressione `Enter`:
 
-    ```
+    ```bash
     sudo apt clean
     sudo apt autoclean
     sudo apt autoremove
@@ -86,7 +107,13 @@ Para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`sem precisar digit
 
 ## Referências
 
-[3] OPENAI. ***Instale gromit-mpx no Ubuntu.*** Disponível em: <https://chat.openai.com/c/7c35ad4d-d9c9-4498-9837-ab1b99548eb5> (texto adaptado). Acessado em: 06/03/2024 13:47.
+[3] OPENAI.
+**Instale gromit-mpx no Ubuntu.**
+Disponível em: <https://chat.openai.com/c/7c35ad4d-d9c9-4498-9837-ab1b99548eb5> (texto adaptado).
+Acessado em: 06/03/2024 13:47.
 
-[2] OPENAI. ***Vs code: editor popular.*** Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado). Acessado em: 06/03/2024 13:48.
+[2] OPENAI.
+**Vs code: editor popular.**
+Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado).
+Acessado em: 06/03/2024 13:48.
 
