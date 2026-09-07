@@ -127,7 +127,7 @@ Para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`sem precisar digit
 ## Referências
 
 [3] OPENAI.
-**Instale gromit-mpx no Ubuntu.**
+**Instalar o `gromit-mpx` no `linux ubuntu` pelo `terminal emulator`.**
 Disponível em: <https://chat.openai.com/c/7c35ad4d-d9c9-4498-9837-ab1b99548eb5> (texto adaptado).
 Acessado em: 06/03/2024 13:47.
 
