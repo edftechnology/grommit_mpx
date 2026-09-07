@@ -2,23 +2,23 @@
 
 ## Resumo
 
-Neste documento estão contidos os principais comandos e configurações para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`.
+Neste documento estão contidos os principais comandos e configurações para instalar e usar o `gromit-mpx` via `apt` no `Linux Ubuntu`.
 
 ## _Abstract_
 
-_In this document are contained the main commands and settings to set up/install the `gromit-mpx` on `Linux Ubuntu`._
+_This document contains the main commands and settings to install and use `gromit-mpx` via `apt` on `Linux Ubuntu`._
 
 
-## Descrição [2]
+## Descrição [2][3]
 
 ### `gromit-mpx`
 
-O `Gromit-MPX` é uma ferramenta de desenho em tela aberta projetada para permitir que os usuários desenhem e escrevam diretamente na área de trabalho do computador. Ele oferece uma variedade de opções de pincel e cores, além de suporte para entrada de caneta ou tela sensível ao toque. Com recursos como ocultar temporariamente as anotações e ajustar a opacidade, é ideal para apresentações, tutoriais e colaboração em equipe durante reuniões virtuais.
+O `Gromit-MPX` é uma ferramenta de anotação em tela para ambientes gráficos Unix, incluindo sessões `X11` e sessões `Wayland` com `XWayland`. Ele permite desenhar sobre aplicativos em execução, destacar áreas da tela durante apresentações, limpar as anotações, alternar a visibilidade dos desenhos e ajustar atalhos e ferramentas de desenho por arquivo de configuração.
 
 
-## 1. Como configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu` [1]
+## 1. Como instalar o `gromit-mpx` no `Linux Ubuntu` via `apt` [1][2]
 
-Para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`, você pode seguir estes passos:
+Para instalar o `gromit-mpx` no `Linux Ubuntu` usando o gerenciador de pacotes `apt`, você pode seguir estes passos:
 
 1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
 
@@ -68,40 +68,55 @@ Para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`, você pode segui
     sudo apt full-upgrade -y
     ```
 
-## 1.2 Usar o `gromit-mpx`
+## 1.2 Instalar e usar o `gromit-mpx`
 
-Para instalar o `gromit-mpx` no `Linux Ubuntu`, você pode seguir os seguintes passos:
+Após atualizar o sistema, instale o pacote oficial disponível nos repositórios do `Ubuntu`:
 
-1. **Instale o `gromit-mpx` executando:**
+1. Instalar o `gromit-mpx` via `apt`:
 
     ```bash
     sudo apt install gromit-mpx -y
     ```
 
-    Após a instalação, você pode iniciar o `gromit-mpx` diretamente do terminal ou configurá-lo para iniciar automaticamente com o sistema. O `gromit-mpx` permite que você desenhe em sua tela, o que pode ser particularmente útil para apresentações ou para destacar algo enquanto você grava sua tela.
+2. Verificar se o comando foi instalado corretamente:
 
-    Caso deseje iniciar o `gromit-mpx`, você pode simplesmente digitar `gromit-mpx` no `Terminal Emulator`. Para ativar e desativar o desenho, você geralmente usa a tecla de atalho padrão que é o `F9`. Você pode configurar as teclas de atalho e outras opções editando o arquivo de configuração do `gromit-mpx`, geralmente localizado em `~/.config/gromit-mpx.cfg`.
+    ```bash
+    gromit-mpx --version
+    ```
 
-Lembre-se de que, para fazer anotações durante uma apresentação ou enquanto usa outros aplicativos, o `gromit-mpx` deve estar rodando em segundo plano. Você também pode querer consultar a documentação ou a página de ajuda do `gromit-mpx` para obter mais informações sobre personalizações e uso 
+3. Iniciar o `gromit-mpx`:
 
-### 1.2.1 Teclas de atalho do `grommit-mpx`
+    ```bash
+    gromit-mpx
+    ```
+
+    O `gromit-mpx` fica em execução em segundo plano e pode ser ativado por atalhos de teclado ou por novas chamadas ao comando. Para encerrar o processo principal pelo terminal, execute:
+
+    ```bash
+    gromit-mpx --quit
+    ```
+
+    O arquivo de configuração do usuário normalmente fica em `~/.config/gromit-mpx.cfg`. Se esse arquivo não existir, o programa usa a configuração padrão instalada em `/etc/gromit-mpx/`.
+
+
+### 1.2.1 Teclas de atalho do `gromit-mpx`
 
 <div align="center">
 
-| _Description_     | Descrição             | Tecla de atalho |
-|:------------------|:----------------------|:---------------:|
-| Toggle painting   | Alternar pintura      | `Home`          |
-| Clear screen      | Limpar tela           | `Shift + Home`  |
-| Toggle visibility | Alternar visibilidade | `Ctrl + Home`   |
-| Undo              | Desfazer              | `End`           |
-| Redo              | Refazer               | `Shift + End`   | 
-| Quit              | Sair                  | `Alt + Home`    |
+| _Description_     | Descrição             | Tecla de atalho padrão |
+|:------------------|:----------------------|:----------------------:|
+| Toggle painting   | Alternar pintura      | `F9`                   |
+| Clear screen      | Limpar tela           | `Shift + F9`           |
+| Toggle visibility | Alternar visibilidade | `Ctrl + F9`            |
+| Undo              | Desfazer              | `F8`                   |
+| Redo              | Refazer               | `Shift + F8`           | 
+| Quit              | Sair                  | `Alt + F9`             |
 
 </div>
 
 ## 2. Código completo para configurar/instalar/usar
 
-Para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`sem precisar digitar linha por linha, você pode seguir estas etapas:
+Para instalar o `gromit-mpx` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 
 1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
 
@@ -114,25 +129,22 @@ Para configurar/instalar/usar o `gromit-mpx` no `Linux Ubuntu`sem precisar digit
     ```bash
     sudo apt clean
     sudo apt autoclean
-    sudo apt autoremove
-    sudo apt update -y
+    sudo apt autoremove -y
+    sudo apt update
+    sudo apt --fix-broken install -y
     sudo apt autoclean
     sudo apt list --upgradable
     sudo apt full-upgrade -y
     sudo apt install gromit-mpx -y
-    gromit-mpx
+    gromit-mpx --version
     ```
 
 
 ## Referências
 
-[3] OPENAI.
-**Instalar o `gromit-mpx` no `linux ubuntu` pelo `terminal emulator`.**
-Disponível em: <https://chat.openai.com/c/7c35ad4d-d9c9-4498-9837-ab1b99548eb5> (texto adaptado).
-Acessado em: 06/03/2024 13:47.
+[1] OPENAI. **Instalar o `gromit-mpx` no `linux ubuntu` pelo `terminal emulator`**. Disponível em: <https://chatgpt.com/g/g-p-6980caf949648191ad6acfcdbe590f9e-instalar/c/7c35ad4d-d9c9-4498-9837-ab1b99548eb5>. ChatGPT. Acessado em: 07/09/2026.
 
-[2] OPENAI.
-**Vs code: editor popular.**
-Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado).
-Acessado em: 06/03/2024 13:48.
+[2] CANONICAL. **Gromit-mpx - presentation helper to make annotations on screen**. Disponível em: <https://manpages.ubuntu.com/manpages/jammy/man1/gromit-mpx.1.html>. Acessado em: 07/09/2026.
+
+[3] BEIER, Christian. **Gromit-mpx**. Disponível em: <https://github.com/bk138/gromit-mpx>. GitHub. Acessado em: 07/09/2026.
 
