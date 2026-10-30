@@ -2,19 +2,24 @@
 
 ## Resumo
 
-Neste documento estão contidos os principais comandos e configurações para instalar e usar o `gromit-mpx` via `apt` no `Linux Ubuntu`.
+Neste documento estão contidos os principais comandos e configurações 
+para instalar e usar o `gromit-mpx` via `apt` no `Linux Ubuntu`.
 
 ## _Abstract_
 
-_This document contains the main commands and settings to install and use `gromit-mpx` via `apt` on `Linux Ubuntu`._
-
+_This document contains the main commands and settings to install and
+use `gromit-mpx` via `apt` on `Linux Ubuntu`._
 
 ## Descrição [2][3]
 
 ### `gromit-mpx`
 
-O `Gromit-MPX` é uma ferramenta de anotação em tela para ambientes gráficos Unix, incluindo sessões `X11` e sessões `Wayland` com `XWayland`. Ele permite desenhar sobre aplicativos em execução, destacar áreas da tela durante apresentações, limpar as anotações, alternar a visibilidade dos desenhos e ajustar atalhos e ferramentas de desenho por arquivo de configuração.
-
+O `Gromit-MPX` é uma ferramenta de anotação em tela para ambientes gráficos
+`Unix`, incluindo sessões `X11` e sessões `Wayland` com `XWayland`. Ele 
+permite desenhar sobre aplicativos em execução, destacar áreas da tela
+durante apresentações, limpar as anotações, alternar a visibilidade dos
+desenhos e ajustar atalhos e ferramentas de desenho por arquivo de
+configuração.
 
 ## 1. Como instalar o `gromit-mpx` no `Linux Ubuntu` via `apt` [1][2]
 
@@ -103,14 +108,14 @@ Após atualizar o sistema, instale o pacote oficial disponível nos repositório
 
 <div align="center">
 
-| _Description_     | Descrição             | Tecla de atalho padrão |
-|:------------------|:----------------------|:----------------------:|
-| Toggle painting   | Alternar pintura      | `F9`                   |
-| Clear screen      | Limpar tela           | `Shift + F9`           |
-| Toggle visibility | Alternar visibilidade | `Ctrl + F9`            |
-| Undo              | Desfazer              | `F8`                   |
-| Redo              | Refazer               | `Shift + F8`           | 
-| Quit              | Sair                  | `Alt + F9`             |
+|#| _Description_     | Descrição             | Tecla de atalho padrão |
+|:-:|:------------------|:----------------------|:----------------------:|
+|1| Toggle painting   | Alternar pintura      | `F9`                   |
+|2| Clear screen      | Limpar tela           | `Shift + F9`           |
+|3| Toggle visibility | Alternar visibilidade | `Ctrl + F9`            |
+|4| Undo              | Desfazer              | `F8`                   |
+|5| Redo              | Refazer               | `Shift + F8`           | 
+|6| Quit              | Sair                  | `Alt + F9`             |
 
 </div>
 
@@ -142,9 +147,19 @@ Para instalar o `gromit-mpx` no `Linux Ubuntu` sem precisar digitar linha por li
 
 ## Referências
 
-[1] OPENAI. **Instalar o `gromit-mpx` no `linux ubuntu` pelo `terminal emulator`**. Disponível em: <https://chatgpt.com/g/g-p-6980caf949648191ad6acfcdbe590f9e-instalar/c/7c35ad4d-d9c9-4498-9837-ab1b99548eb5>. ChatGPT. Acessado em: 07/09/2026.
+[1] OPENAI.
+**Instalar o `gromit-mpx` no `linux ubuntu` pelo `terminal emulator`**.
+Disponível em: <https://chatgpt.com/g/g-p-6980caf949648191ad6acfcdbe590f9e-instalar/c/7c35ad4d-d9c9-4498-9837-ab1b99548eb5>.
+ChatGPT.
+Acessado em: 07/09/2026.
 
-[2] CANONICAL. **Gromit-mpx - presentation helper to make annotations on screen**. Disponível em: <https://manpages.ubuntu.com/manpages/jammy/man1/gromit-mpx.1.html>. Acessado em: 07/09/2026.
+[2] CANONICAL.
+**Gromit-mpx - presentation helper to make annotations on screen**.
+Disponível em: <https://manpages.ubuntu.com/manpages/jammy/man1/gromit-mpx.1.html>.
+Acessado em: 07/09/2026.
 
-[3] BEIER, Christian. **Gromit-mpx**. Disponível em: <https://github.com/bk138/gromit-mpx>. GitHub. Acessado em: 07/09/2026.
-
+[3] BEIER, Christian.
+**Gromit-mpx**.
+Disponível em: <https://github.com/bk138/gromit-mpx>.
+GitHub.
+Acessado em: 07/09/2026.
